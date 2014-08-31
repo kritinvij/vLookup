@@ -1,0 +1,685 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!-- saved from url=(0024)http://www.indivibe.com/ -->
+<html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+
+<title>Indivibe - The Clubbing Community for Events, Clubs, Music and Nightlife</title>
+
+<link href="./Indivibe - The Clubbing Community for Events, Clubs, Music and Nightlife_files/indivibe.css" rel="stylesheet" type="text/css">
+<script language="javascript">AC_FL_RunContent = 0;</script><style type="text/css"></style>
+<script src="./Indivibe - The Clubbing Community for Events, Clubs, Music and Nightlife_files/AC_RunActiveContent.js" language="javascript"></script>
+<script language="javascript" src="./Indivibe - The Clubbing Community for Events, Clubs, Music and Nightlife_files/prototype-1.6.0.2.js"></script>
+<script language="javascript" src="./Indivibe - The Clubbing Community for Events, Clubs, Music and Nightlife_files/ajaxfunctions.js"></script> 
+
+<style type="text/css">
+<!--
+.thumbs ul, .thumbs li {
+    list-style: none;
+    }
+.thumbs li {
+	float: right;
+	position: relative;
+	width: 132px;
+	height: 100px;
+	padding-top: 13px;
+	padding-right: 0;
+	padding-bottom: 0;
+	padding-left: 13px;
+    }
+.thumbs a {
+    text-decoration: none;
+    }
+.thumbs a span {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 146px;
+	height: 113px;
+	background-image: url(blog-frame.png);
+	overflow: hidden;
+    }
+body {
+	background-color: #000000;
+}
+#divContainer{
+	position:absolute;
+	width:1000px;
+	top:-1px;
+	left:0px;
+	clip:rect(0,115,100,0);
+	visibility:visible;
+	background-color: #FFFFFF;
+}
+#divContent{position:absolute; top:0px; left:0px} 
+
+#index_wrap{
+	
+	width: 1000px;
+}
+#cities {
+	position:absolute;
+	width:188px;
+	height:340px;
+	z-index:4;
+	left: 360px;
+	top: 80px;
+}
+#thumbs {
+	position:absolute;
+	width:188px;
+	height:260px;
+	left: -20px;
+	top: 203px;
+	z-index: 7;
+}
+#flash_position {
+	position:absolute;
+	width:700px;
+	left:0px;
+	top:5;
+	z-index: 2;
+	margin-top: 98px;
+}
+#indexcontent {
+	position:absolute;
+	/*width:510px;*/
+	width:565px;
+	height:465px;
+	z-index:1;
+	left: 435px;
+	top: 99px;
+	background-color: #000000;
+	
+}
+.transtable{
+background-color: #000000;
+
+
+}
+#apDiv1 {
+	position:absolute;
+	width:200px;
+	height:115px;
+	z-index:6;
+	left: 549px;
+	top: 0px;
+}
+#eventimg {
+	position:absolute;
+	width:357px;
+	height:164px;
+	z-index:5;
+	left: 594px;
+	top: 0px;
+	background-color: #000000;
+	overflow: hidden;
+	
+}
+#apDiv2 {
+	position:absolute;
+	width:200px;
+	height:115px;
+	z-index:7;
+	left: 16px;
+	top: 55px;
+}
+#tab_content {
+	position:absolute;
+	width:396px;
+	height:343px;
+	z-index:3;
+	left: 549px;
+	top: 99px;
+	font-family: Geneva, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	line-height: 15px;
+	font-weight: bold;
+	color: #999999;
+}
+#tab_content a:link{
+font-size: 13px;
+color: #999999;
+text-decoration:none;
+}
+#tab_content a:visited{
+font-size: 13px;
+color: #999999;
+text-decoration:none;
+}
+#apDiv3 {
+	position:absolute;
+	width:200px;
+	height:115px;
+	z-index:1;
+	left: 48px;
+	top: 12px;
+}
+#apDiv4 {
+	background-image:url(images/kfp.jpg);
+	background-repeat:no-repeat;
+	position:absolute;
+	width:53px;
+	height:58px;
+	z-index:1;
+	left: 500px;
+	top: 383px;
+}
+#apDiv5{
+	background-image:url(images/VH1-get-with-it.jpg);
+	background-repeat:no-repeat;
+	position:absolute;
+	width:59px;
+	height:44px;
+	z-index:1;
+	left: 440px;
+	top: 397px;
+}
+
+#apDiv6{
+	background-image:url(images/submerge.gif);
+	background-repeat:no-repeat;
+	position:absolute;
+	width:64px;
+	height:49px;
+	z-index:1;
+	left: 320px;
+	top: 401px;
+}
+#apDiv7 {
+	background-image:url(images/burn.jpg);
+	background-repeat:no-repeat;
+	position:absolute;
+	width:22px;
+	height:59px;
+	z-index:1;
+	left: 465px;
+	top: 378px;
+}
+
+#apDiv8 {
+	background-image:url(images/hennessy.png);
+	background-repeat:no-repeat;
+	position:absolute;
+	width:59px;
+	height:44px;
+	z-index:1;
+	left: 380px;
+	top: 395px;
+	
+}
+.events_list{
+	font-family: Arial, tahoma, Helvetica;
+	font-size: 15px;
+	font-weight: bold;
+	margin-top: 0;
+	margin-bottom: 1px;
+	text-decoration: none;
+	/*line-height:26.4px;			font-family:Georgia, "Times New Roman", Times, serif;
+			line-height:26.4px;
+			font-size:17.4px;
+			font-style:italic;
+			color:#383838;
+			text-decoration:none;*/
+	color:#35696F;		/*font-size:16px;
+	font-family: Helvetica, Arial, sans-serif;
+	text-decoration: none;*/
+	}
+	
+.venue_title {
+
+	font-family:Arial, Helvetica, sans-serif;
+	color:#274d52;
+	font-size:12px;
+	text-decoration: none;
+	font-weight: bold;
+}
+
+-->
+</style>
+<script language="JavaScript">
+function access_website()
+			{
+			if(document.getElementById("loaded_id").value==1 && document.getElementById("access_id").value==1)
+					{
+					document.getElementById('prepage').style.display='none';
+					}
+			}
+<!-- Begin
+function clearPreloadPage() { //DOM
+if (document.getElementById){
+document.getElementById("loaded_id").value=1;
+if(document.getElementById("access_id").value==1)
+	{
+document.getElementById('prepage').style.display='none';
+	}
+/*
+document.getElementById('ageVerification').style.display='block';
+*/
+}else{
+if (document.layers){ //NS4
+document.prepage.display = 'block';
+}
+else { //IE4
+document.all.prepage.style.display = 'none';
+//document.getElementById('testing_vik').style.display='block';
+}
+}
+}
+// End -->
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+MM_preloadImages('images/main_logo.gif','images/loading1.gif','images/logo_index2.jpg');
+</script>
+<script>
+function navigation(id)
+		{
+
+		document.location.href='event.php?eid='+id;
+		}
+
+function age_verf(access)
+			{
+			if(access==1)
+				{
+				
+				document.getElementById("access_id").value=1;
+				document.getElementById("age_veri").style.display="none";
+				document.getElementById("loadding_sc").style.display="block";
+				access_website();
+				}else
+					{
+					document.getElementById("error_tt").style.display="block";
+					document.getElementById("show_tt").style.display="none";
+					}
+			
+			}
+
+</script>
+
+</head>
+
+<body style="">
+<input type="hidden" name="access_id" id="access_id" value="0">
+<input type="hidden" name="loaded_id" id="loaded_id" value="0">
+<!--<div id="prepage" style="position:absolute; font-family:arial; font-size:16; left:0px;top:0px; background-color:#000000; height:700px; width:100%;Z-index:255555;">
+<table width=100% style="position:absolute;top:150px;left:0px;" bgcolor="#000000" > <tr><td align="center">
+
+<img src="images/main_logo.gif" width="150" height="102" /></td></tr></table>
+<div id="age_veri">
+
+<table width="100%" style="position:absolute;top:252px;left:0px;" bgcolor="#000000" > <tr><td >
+<table align="center" bgcolor="#FFFFFF" width="40%"><tr><td>
+<div id="show_tt">
+<Table  align="center" bgcolor="#FFFFFF" width="100%">
+
+<tr><td  class="events_list" align="left" colspan="4" >Age Verification</td></tr>
+<tr><td colspan="4" align="left" >Are you of legal drinking age in your country of residence?</td></tr>
+<tr><Td width="3%"><input type="radio" name="radAge" value="1" onClick="age_verf(1)" /></Td><td width="3%" align="left">Yes</td><td width="5%"><input type="radio" name="radAge" value="2" onClick="age_verf(2)" /></td><td align="left"  >No</td></tr>
+</Table>
+</div>
+<div id="error_tt"  class="venue_title" style="display:none;background-color:#FFFFFF;  " >
+Sorry, you must be of legal drinking age to access this website.
+</div>
+
+</td></tr></table>
+</td></tr></table>
+
+</div>
+<div id="loadding_sc" style="display:none;"> 
+<table width=100% style="position:absolute;top:252px;left:0px;" bgcolor="#000000" > <tr><td align="center">
+<img src="images/loading1.gif" /></td></tr></table>
+</div>
+</div>-->
+<!--
+<div id="ageVerification" style="position:absolute; font-family:arial; font-size:16; left:0px;top:0px; background-color:#000000; height:700px; width:100%;Z-index:255555;display:none;"> 
+<table width=100% style="position:absolute;top:150px;left:0px;" bgcolor="#000000" > 
+<tr><td >
+<table cellpadding="0" cellspacing="0" border="0" width="50%" align="center" bgcolor="#FFFFFF">
+							<tr><td width="25"><img src="images/top_left_crnr1.gif" /></td>
+							<td valign="top" style="background-image:url(images/btm.gif);background-repeat:repeat-x;" width="25"></td><td  align="left" width="25"><img src="images/top_right_crnr1.gif" /></td>
+							</tr>
+							<tr><td style="background-image:url(images/left_v.gif); background-repeat:repeat-Y;"></td><td width="100%" >
+<div id="show_tt">
+<form method="post" action="" name="ageForm">
+<Table width="100%" align="center" bgcolor="#FFFFFF">
+<tr><td  class="events_list" align="left" colspan="2" >Age Verification</td></tr>
+<tr><td>Enter DOB :</td><td><select name="b_day" class="textbox" style="width:80px"><option value="">-- Day --</option><option value="1" >1</option><option value="2" >2</option><option value="3" >3</option><option value="4" >4</option><option value="5" >5</option><option value="6" >6</option><option value="7" >7</option><option value="8" >8</option><option value="9" >9</option><option value="10" >10</option><option value="11" >11</option><option value="12" >12</option><option value="13" >13</option><option value="14" >14</option><option value="15" >15</option><option value="16" >16</option><option value="17" >17</option><option value="18" >18</option><option value="19" >19</option><option value="20" >20</option><option value="21" >21</option><option value="22" >22</option><option value="23" >23</option><option value="24" >24</option><option value="25" >25</option><option value="26" >26</option><option value="27" >27</option><option value="28" >28</option><option value="29" >29</option><option value="30" >30</option><option value="31" >31</option></select>&nbsp;<select name="b_month" class="textbox" style="width:90px"><option value="">-- Month --</option><option value="1" >January</option><option value="2" >Febraury</option><option value="3" >March</option><option value="4" >April</option><option value="5" >May</option><option value="6" >June</option><option value="7" >July</option><option value="8" >August</option><option value="9" >September</option><option value="10" >October</option><option value="11" >November</option><option value="12" >December</option></select>&nbsp;<select name="b_year" class="textbox" style="width:80px"><option value="">-- Year --</option><option value="1950" >1950</option><option value="1951" >1951</option><option value="1952" >1952</option><option value="1953" >1953</option><option value="1954" >1954</option><option value="1955" >1955</option><option value="1956" >1956</option><option value="1957" >1957</option><option value="1958" >1958</option><option value="1959" >1959</option><option value="1960" >1960</option><option value="1961" >1961</option><option value="1962" >1962</option><option value="1963" >1963</option><option value="1964" >1964</option><option value="1965" >1965</option><option value="1966" >1966</option><option value="1967" >1967</option><option value="1968" >1968</option><option value="1969" >1969</option><option value="1970" >1970</option><option value="1971" >1971</option><option value="1972" >1972</option><option value="1973" >1973</option><option value="1974" >1974</option><option value="1975" >1975</option><option value="1976" >1976</option><option value="1977" >1977</option><option value="1978" >1978</option><option value="1979" >1979</option><option value="1980" >1980</option><option value="1981" >1981</option><option value="1982" >1982</option><option value="1983" >1983</option><option value="1984" >1984</option><option value="1985" >1985</option><option value="1986" >1986</option><option value="1987" >1987</option><option value="1988" >1988</option><option value="1989" >1989</option><option value="1990" >1990</option><option value="1991" >1991</option><option value="1992" >1992</option><option value="1993" >1993</option><option value="1994" >1994</option><option value="1995" >1995</option><option value="1996" >1996</option><option value="1997" >1997</option><option value="1998" >1998</option><option value="1999" >1999</option><option value="2000" >2000</option></select></td></tr>
+<tR><td></td><td><input type="button" name="submit" value="Submit" class="btn" onclick="check_age()" /></td></tR>
+<tR><td>&nbsp;</td></tR>
+</Table></form>
+</div>
+<div id="error_tt" style="display:none;" class="venue_title">
+You should be older than 19 years to Access the site.
+</div>
+
+</td><td style="background-image:url(images/left_v.gif); background-repeat:repeat-y; background-position:right; margin-right:5px;" width="25"  ></td></tr>
+								<tr><td  width="25"><img src="images/btm_left_crnr1.gif" /></td><td style="background-image:url(images/btm.gif);background-repeat:repeat-x; background-position:bottom" ></td><td align="right" width="25" ><img src="images/btm_right_crnr1.gif" border="0" /></td>
+								</tr>				
+								</table>
+
+</td></tr></table>
+</div>
+
+-->
+
+<div id="divContainer">
+  <div class="index_wrap" id="divContent">
+    <div id="tab_content">
+     <table width="100%" border="0" cellpadding="0" cellspacing="0" class="white_txt">
+      <tbody><tr height="110px"><td></td></tr>
+      <tr><td><img src="./Indivibe - The Clubbing Community for Events, Clubs, Music and Nightlife_files/logo_index2.jpg"></td></tr>
+	  <tr>
+          <td class="transtable">
+		  <table cellspacing="0" border="0" align="left"><tbody><tr><td colspan="2" align="left" style="color:#ffffff">Featured Events</td></tr><tr><td align="left">  <a href="http://www.indivibe.com/event.php?eid=640981" class="linktext">Ma Faiza - B’13 TOUR </a></td></tr><tr><td align="left">  <a href="http://www.indivibe.com/event.php?eid=639832" class="linktext">Heineken Open Your World Tour | Akshai Sarin</a></td></tr><tr><td align="left">  <a href="http://www.indivibe.com/event.php?eid=639596" class="linktext">Partido EDM Festival</a></td></tr></tbody></table>		   </td>
+        </tr>
+		<tr><td>&nbsp;</td></tr>
+        <tr>
+          <td class="transtable" align="left"><table cellspacing="0" cellpadding="0" border="0" align="left"><tbody><tr><td align="left" style="color:#ffffff">Announcements</td></tr><tr><td align="left">  <a href="http://www.indivibe.com/news.php?nid=885" class="linktext">Astral Projection - Tour</a></td></tr><tr><td align="left">  <a href="http://www.indivibe.com/news.php?nid=884" class="linktext">Bizzare Contact - Tour</a></td></tr><tr><td align="left">  <a href="http://www.indivibe.com/news.php?nid=883" class="linktext">Lucy Stone - Tour</a></td></tr></tbody></table></td>
+        </tr>
+        <tr>
+          <td class="transtable" align="right">&nbsp;</td>
+        </tr>
+      </tbody></table>
+     <div id="join">
+       <div align="right"></div>
+     </div>
+    </div>
+    <!-- This clearing element should immediately follow the #mainContent div in order to force the #container div to contain all child floats -->
+    <table width="100%" border="0" cellspacing="0" cellpadding="0">
+      <tbody><tr>
+        <td align="center">
+          
+          
+          
+          
+          
+          <div id="flash_position">
+            <div align="left">
+              <table width="100%" border="0" cellpadding="0" cellspacing="0">
+                <tbody><tr>
+                  <td width="57%" rowspan="3" align="left" valign="top"><img src="./Indivibe - The Clubbing Community for Events, Clubs, Music and Nightlife_files/dj.png" width="397" height="550"></td>
+                  <td width="43%" height="244" align="left" valign="top">&nbsp;</td>
+                </tr>
+                <tr>
+                  <td align="left" valign="bottom"><img src="./Indivibe - The Clubbing Community for Events, Clubs, Music and Nightlife_files/bd.png" width="38" height="112" hspace="0" vspace="0"></td>
+                </tr>
+                <tr>
+                  <td height="100" align="left" valign="top"><img src="./Indivibe - The Clubbing Community for Events, Clubs, Music and Nightlife_files/flash.png" border="0" width="303" height="193"></td>
+                </tr>
+              </tbody></table>
+            </div>
+          </div>
+          <div id="thumbs">
+            <table width="209" border="0" align="left" cellpadding="0" cellspacing="0" background="./Indivibe - The Clubbing Community for Events, Clubs, Music and Nightlife_files/frame_bg.png" style="background-repeat:no-repeat;">
+		
+  <tbody><tr>
+    <td height="62" colspan="2" align="center">&nbsp;</td>
+  </tr>
+
+ 
+  <tr>
+    <td width="85" height="84" align="center"><img src="./Indivibe - The Clubbing Community for Events, Clubs, Music and Nightlife_files/spacer.gif" width="71" height="1"> </td>
+    <td width="162" align="left"></td>
+  </tr>
+	
+	
+  <tr>
+    <td height="84" colspan="2" align="left"><table width="100%" border="0" cellpadding="0" cellspacing="0"><tbody><tr><td width="25%" height="88"><img src="./Indivibe - The Clubbing Community for Events, Clubs, Music and Nightlife_files/spacer.gif" width="53" height="1"></td>
+      <td width="75%" align="left"></td>
+    </tr></tbody></table></td>
+  </tr>
+ 
+  
+  <tr>
+ <td width="85" height="84" align="center"><img src="./Indivibe - The Clubbing Community for Events, Clubs, Music and Nightlife_files/spacer.gif" width="71" height="1"> </td>
+    <td height="84" colspan="2" align="center"></td>
+  </tr>
+</tbody></table>
+</div>
+          <div id="cities"><img src="./Indivibe - The Clubbing Community for Events, Clubs, Music and Nightlife_files/locations.png" width="160" height="370" border="0" usemap="#Map"></div>
+		 
+          <div id="apDiv1"> 
+		  <input type="hidden" name="eventt_id" id="eventt_id" value="2">
+		  		<script>
+		function test_f()
+				{
+			var	val=document.getElementById("eventt_id").value;
+			//alert(ssid[val]);
+			document.location.href="event.php?eid="+ssid[val];
+			
+				}
+		</script>
+		<img src="./Indivibe - The Clubbing Community for Events, Clubs, Music and Nightlife_files/eventsbox.png" width="430" height="195" border="0" usemap="#Map2" onclick="test_f();" style="cursor:pointer;">
+				  </div>
+          <div id="eventimg">
+		  <script type="text/javascript">var fadeimages=new Array();var ssid=new Array();fadeimages[0]=["ads/7ApEhlanding-ma-faiza.jpg", "640981", "_new"];ssid[0]=640981;fadeimages[1]=["ads/navEblanding-partido.jpg", "639596", "_new"];ssid[1]=639596;fadeimages[2]=["ads/U7A5elanding-heineken-akshai-sarin.jpg", "639832", "_new"];ssid[2]=639832;</script><script type="text/javascript">
+function testfunction(t)
+	{
+	// alert(t);
+//	document.getElementById("eventt_id").value=t;
+	//alert(href);
+	}
+   
+/***********************************************
+* Ultimate Fade-In Slideshow (v1.51): � Dynamic Drive (http://www.dynamicdrive.com)
+* This notice MUST stay intact for legal use
+* Visit http://www.dynamicdrive.com/ for this script and 100s more.
+***********************************************/
+ 
+/*var fadeimages=new Array()
+//SET IMAGE PATHS. Extend or contract array as needed
+fadeimages[0]=["photo1.jpg", "", ""] //plain image syntax
+fadeimages[1]=["photo2.jpg", "http://www.cssdrive.com", ""] //image with link syntax
+fadeimages[2]=["photo3.jpg", "http://www.javascriptkit.com", "_new"] //image with link and target syntax*/
+ 
+var fadeimages2=new Array() //2nd array set example. Remove or add more sets as needed.
+//SET IMAGE PATHS. Extend or contract array as needed
+fadeimages2[0]=["photo1.jpg", "", ""] //plain image syntax
+fadeimages2[1]=["photo2.jpg", "http://www.cssdrive.com", ""] //image with link syntax
+fadeimages2[2]=["photo3.jpg", "http://www.javascriptkit.com", "_new"] //image with link and target syntax
+ 
+var fadebgcolor="white"
+
+////NO need to edit beyond here/////////////
+ 
+var fadearray=new Array() //array to cache fadeshow instances
+var fadeclear=new Array() //array to cache corresponding clearinterval pointers
+ 
+var dom=(document.getElementById) //modern dom browsers
+var iebrowser=document.all
+ 
+function fadeshow(theimages, fadewidth, fadeheight, borderwidth, delay, pause, displayorder){
+this.pausecheck=pause
+this.mouseovercheck=0
+this.delay=delay
+this.degree=10 //initial opacity degree (10%)
+this.curimageindex=0
+this.nextimageindex=1
+fadearray[fadearray.length]=this
+this.slideshowid=fadearray.length-1
+this.canvasbase="canvas"+this.slideshowid
+this.curcanvas=this.canvasbase+"_0"
+if (typeof displayorder!="undefined")
+theimages.sort(function() {return 0.5 - Math.random();}) //thanks to Mike (aka Mwinter) :)
+this.theimages=theimages
+this.imageborder=parseInt(borderwidth)
+this.postimages=new Array() //preload images
+for (p=0;p<theimages.length;p++){
+this.postimages[p]=new Image()
+this.postimages[p].src=theimages[p][0]
+}
+ 
+var fadewidth=fadewidth+this.imageborder*2
+var fadeheight=fadeheight+this.imageborder*2
+ 
+if (iebrowser&&dom||dom)
+{ //if IE5+ or modern browsers (ie: Firefox)
+document.write('<div id="master'+this.slideshowid+'" style="position:relative;width:'+fadewidth+'px;height:'+fadeheight+'px;overflow:hidden;"><div id="'+this.canvasbase+'_0" style="position:absolute;width:'+fadewidth+'px;height:'+fadeheight+'px;top:0;left:0;filter:progid:DXImageTransform.Microsoft.alpha(opacity=10);opacity:0.1;-moz-opacity:0.1;-khtml-opacity:0.1;background-color:'+fadebgcolor+'"></div><div id="'+this.canvasbase+'_1" style="position:absolute;width:'+fadewidth+'px;height:'+fadeheight+'px;top:0;left:0;filter:progid:DXImageTransform.Microsoft.alpha(opacity=10);opacity:0.1;-moz-opacity:0.1;-khtml-opacity:0.1;background-color:'+fadebgcolor+'"></div></div>')
+}
+else
+{
+
+document.write('<div><img name="defaultslide'+this.slideshowid+'" src="'+this.postimages[0].src+'" onclick="alert('+postimages[0]+')"></div>')
+}
+ 
+if (iebrowser&&dom||dom) //if IE5+ or modern browsers such as Firefox
+this.startit()
+else{
+this.curimageindex++
+setInterval("fadearray["+this.slideshowid+"].rotateimage()", this.delay)
+}
+}
+
+function fadepic(obj){
+if (obj.degree<100){
+obj.degree+=10
+if (obj.tempobj.filters&&obj.tempobj.filters[0]){
+if (typeof obj.tempobj.filters[0].opacity=="number") //if IE6+
+obj.tempobj.filters[0].opacity=obj.degree
+else //else if IE5.5-
+obj.tempobj.style.filter="alpha(opacity="+obj.degree+")"
+}
+else if (obj.tempobj.style.MozOpacity)
+obj.tempobj.style.MozOpacity=obj.degree/101
+else if (obj.tempobj.style.KhtmlOpacity)
+obj.tempobj.style.KhtmlOpacity=obj.degree/100
+else if (obj.tempobj.style.opacity&&!obj.tempobj.filters)
+obj.tempobj.style.opacity=obj.degree/101
+}
+else{
+clearInterval(fadeclear[obj.slideshowid])
+obj.nextcanvas=(obj.curcanvas==obj.canvasbase+"_0")? obj.canvasbase+"_0" : obj.canvasbase+"_1"
+obj.tempobj=iebrowser? iebrowser[obj.nextcanvas] : document.getElementById(obj.nextcanvas)
+var tt=obj.nextimageindex-1;
+var curr=0;
+if(tt==-1)
+	{
+	curr=(fadeimages.length)-1;
+	}
+	else
+		{
+		curr=tt;
+		}
+		
+document.getElementById("eventt_id").value=curr;
+obj.populateslide(obj.tempobj, obj.nextimageindex)
+obj.nextimageindex=(obj.nextimageindex<obj.postimages.length-1)? obj.nextimageindex+1 : 0
+setTimeout("fadearray["+obj.slideshowid+"].rotateimage()", obj.delay)
+}
+}
+ 
+fadeshow.prototype.populateslide=function(picobj, picindex){
+var slideHTML=""
+//alert(this.theimages[picindex][1]);
+if (this.theimages[picindex][1]!=""){
+	//alert(this.theimages[picobj][1]);
+	} //if associated link exists for image
+
+slideHTML+='<img src="'+this.postimages[picindex].src+'" border="'+this.imageborder+'px">'
+
+
+picobj.innerHTML=slideHTML
+}
+ 
+ 
+fadeshow.prototype.rotateimage=function(){
+if (this.pausecheck==1) //if pause onMouseover enabled, cache object
+var cacheobj=this
+if (this.mouseovercheck==1)
+setTimeout(function(){cacheobj.rotateimage()}, 100)
+else if (iebrowser&&dom||dom){
+this.resetit()
+var crossobj=this.tempobj=iebrowser? iebrowser[this.curcanvas] : document.getElementById(this.curcanvas)
+crossobj.style.zIndex++
+fadeclear[this.slideshowid]=setInterval("fadepic(fadearray["+this.slideshowid+"])",50)
+this.curcanvas=(this.curcanvas==this.canvasbase+"_0")? this.canvasbase+"_1" : this.canvasbase+"_0"
+}
+else{
+var ns4imgobj=document.images['defaultslide'+this.slideshowid]
+ns4imgobj.src=this.postimages[this.curimageindex].src
+}
+this.curimageindex=(this.curimageindex<this.postimages.length-1)? this.curimageindex+1 : 0
+}
+ 
+fadeshow.prototype.resetit=function(){
+this.degree=10
+var crossobj=iebrowser? iebrowser[this.curcanvas] : document.getElementById(this.curcanvas)
+if (crossobj.filters&&crossobj.filters[0]){
+if (typeof crossobj.filters[0].opacity=="number") //if IE6+
+crossobj.filters(0).opacity=this.degree
+else //else if IE5.5-
+crossobj.style.filter="alpha(opacity="+this.degree+")"
+}
+else if (crossobj.style.MozOpacity)
+crossobj.style.MozOpacity=this.degree/101
+else if (crossobj.style.KhtmlOpacity)
+crossobj.style.KhtmlOpacity=this.degree/100
+else if (crossobj.style.opacity&&!crossobj.filters)
+crossobj.style.opacity=this.degree/101
+}
+ 
+ 
+fadeshow.prototype.startit=function(){
+var crossobj=iebrowser? iebrowser[this.curcanvas] : document.getElementById(this.curcanvas)
+this.populateslide(crossobj, this.curimageindex)
+if (this.pausecheck==1){ //IF SLIDESHOW SHOULD PAUSE ONMOUSEOVER
+var cacheobj=this
+var crossobjcontainer=iebrowser? iebrowser["master"+this.slideshowid] : document.getElementById("master"+this.slideshowid)
+crossobjcontainer.onmouseover=function(){cacheobj.mouseovercheck=1}
+crossobjcontainer.onmouseout=function(){cacheobj.mouseovercheck=0}
+}
+this.rotateimage()
+}
+
+</script>
+<script type="text/javascript">
+//new fadeshow(IMAGES_ARRAY_NAME, slideshow_width, slideshow_height, borderwidth, delay, pause (0=no, 1=yes), optionalRandomOrder)
+//new fadeshow(fadeimages, 310, 500, 0, 3000, 1, "R")
+new fadeshow(fadeimages, 391, 262, 0, 4000, 0)
+ 
+</script><div id="master0" style="position:relative;width:391px;height:262px;overflow:hidden;"><div id="canvas0_0" style="position: absolute; width: 391px; height: 262px; top: 0px; left: 0px; opacity: 0.9900990099009901; background-color: white; z-index: 3;"></div><div id="canvas0_1" style="position: absolute; width: 391px; height: 262px; top: 0px; left: 0px; opacity: 0.9900990099009901; background-color: white; z-index: 3;"></div></div>
+
+		  </div>
+		  
+          <div id="indexcontent"><div id="apDiv4">
+           <a href="http://www.indivibe.com/profile.php?id=18"><img src="./Indivibe - The Clubbing Community for Events, Clubs, Music and Nightlife_files/blank.gif" width="55" height="53" border="0"></a>
+          </div>       
+          <div id="apDiv5">
+           <a href="http://www.indivibe.com/profile.php?id=28424"><img src="./Indivibe - The Clubbing Community for Events, Clubs, Music and Nightlife_files/blank.gif" width="55" height="39" border="0"></a>
+          </div>
+		  <div id="apDiv8">
+           <a href="http://www.indivibe.com/profile.php?id=34821"><img src="./Indivibe - The Clubbing Community for Events, Clubs, Music and Nightlife_files/blank.gif" width="55" height="39" border="0"></a>
+          </div>
+          </div>        </td>
+      </tr>
+    </tbody></table>
+    <br class="clearfloat">
+  <!-- end #container -->
+  </div>
+</div>
+
+<map name="Map" id="Map">
+  <area shape="rect" coords="69,336,154,360" href="http://www.indivibe.com/login.php" alt="login">
+  <area shape="poly" coords="48,253,50,281,147,284,150,259" href="http://www.indivibe.com/spotlight_all.php?city=3" alt="pune">
+  <area shape="poly" coords="36,46,32,74,139,74,141,44" href="http://www.indivibe.com/spotlight_all.php?city=4" alt="mumbai">
+  <area shape="poly" coords="7,80,3,108,110,108,111,82" href="http://www.indivibe.com/spotlight_all.php?city=5" alt="chennai">
+  <area shape="poly" coords="27,113,23,141,130,141,131,115" href="http://www.indivibe.com/spotlight_all.php?city=7" alt="goa">
+  <area shape="poly" coords="19,144,15,172,114,176,123,146" href="http://www.indivibe.com/spotlight_all.php?city=9" alt="delhi">
+  <area shape="poly" coords="54,184,56,212,155,208,156,182" href="http://www.indivibe.com/spotlight_all.php?city=6" alt="kolkata">
+  <area shape="poly" coords="23,216,25,244,122,247,125,222" href="http://www.indivibe.com/spotlight_all.php?city=2" alt="hyderabad">
+  <area shape="poly" coords="7,7,5,31,109,42,111,11" href="http://www.indivibe.com/spotlight_all.php?city=1" alt="bangalore">
+<area shape="rect" coords="106,365,190,395" href="http://www.indivibe.com/signup.php" alt="JOIN INDIVIBE">
+<area shape="rect" coords="59,310,140,331" href="http://www.indivibe.com/signup.php" alt="join">
+</map>
+
+<div id="apDiv3"><img src="./Indivibe - The Clubbing Community for Events, Clubs, Music and Nightlife_files/main_logo.png" width="225" height="153"></div>
+
+
+
+
+
+
+<div id="sbi_camera_button" class="sbi_search" style="left:0px;top:0px;position:absolute;width:29px;height:27px;border:none;margin:0px 0px 0px 0px;padding:0px 0px 0px 0px;z-index:2147483647;display:none;"></div></body></html>

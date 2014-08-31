@@ -1,0 +1,7 @@
+Name:xyz
+Date:28 September 2013
+Time:1400 hrs (or 2 p.m. //whichever way you like)
+Venue:abc, ghf area, Bangalore (//you can skip writing the city name)
+
+also, instead of Venue, you can write Location: or Place:
+

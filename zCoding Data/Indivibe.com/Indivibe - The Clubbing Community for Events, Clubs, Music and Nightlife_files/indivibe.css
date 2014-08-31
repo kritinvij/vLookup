@@ -1,0 +1,699 @@
+@charset "utf-8";
+/* Internet Explorer CSS hacks */ 
+img { behavior: url(pngbehavior.htc); }
+
+
+#mainContent {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	color: #343434;
+	background-color:#FFFFFF;
+	width: 743px;
+	float: right;
+	border-top-width: 2px;
+	border-right-width: 2px;
+	border-bottom-width: 2px;
+	border-left-width: 2px;
+	border-top-style: solid;
+	border-right-style: solid;
+	border-bottom-style: none;
+	border-left-style: solid;
+	border-top-color: #FF9900;
+	border-right-color: #FF9900;
+	border-bottom-color: #FF9900;
+	border-left-color: #FF9900;	/*filter:progid:DXImageTransform.Microsoft.Alpha(opacity=50);
+	-moz-opacity: 0.5;
+	opacity:0.5;*/
+	margin-bottom: 0px;
+}
+
+body  {
+	font: Helvetica, Arial, sans-serif;
+	font-size:11px;
+	color: #848484;
+	margin: 0; 
+	padding: 0;
+	text-align: center; 
+	color: #130101;
+	background-attachment: fixed;
+	background-color: #000000;
+	background-image: url(images/grunge_bg.jpg);
+	background-repeat: no-repeat;
+	background-position: center top;
+}
+hr{
+	border-top-width: 1px;
+	border-top-style: dashed;
+	border-top-color: #999999;
+	height:1px;
+	color:#FFFFFF;
+}
+#iefix{
+ height:100%;
+  overflow:auto;
+  }
+#container {
+	font: Helvetica, Arial, sans-serif;
+	color: #848484;
+	width: 1000px;
+	text-align: left; /* this overrides the text-align: center on the body element. */
+	margin-top: 0;
+	margin-right: auto;
+	margin-bottom: 0;
+	margin-left: auto;
+	height: 100%;
+	
+} 
+
+/* Tips for sidebar1:
+1. Since we are working in relative units, it's best not to use padding on the sidebar. It will be added to the overall width for standards compliant browsers creating an unknown actual width. 
+2. Since em units are used for the sidebar value, be aware that its width will vary with different default text sizes.
+3. Space between the side of the div and the elements within it can be created by placing a left and right margin on those elements as seen in the ".twoColHybRt #sidebar1 p" rule.
+*/
+#sidebar1 {
+	float: left;
+	width: 228px; /* top and bottom padding create visual space within this div  */
+	padding-top: 70px;
+	padding-right: 0;
+	padding-bottom: 15px;
+	padding-left: 0;
+	background-position: left top;
+	height: 378px;
+	}
+	
+#sidebar_events {
+	float: left;
+	width: 229px; /* top and bottom padding create visual space within this div  */
+	padding-right: 0;
+	padding-bottom: 15px;
+	padding-left: 0;
+	background-position: left top;
+	height: 378px;
+	}
+	
+#sidebar_places{
+ 	float: left;
+	width: 229px; /* top and bottom padding create visual space within this div  */
+	padding-right: 0;
+	padding-top: 50px;
+	padding-bottom: 15px;
+	padding-left: 0;
+	background-position: left top;
+	height: 378px;}
+#sidebar1 h3, #sidebar1 p {
+	margin-left: 10px; /* the left and right margin should be given to every element that will be placed in the side columns */
+	margin-right: 10px;
+}
+
+/* Tips for mainContent:
+1. The space between the mainContent and sidebar1 is created with the right margin on the mainContent div.  No matter how much content the sidebar1 div contains, the column space will remain. You can remove this right margin if you want the #mainContent div's text to fill the #sidebar1 space when the content in #sidebar1 ends.
+2. Be aware it is possible to cause float drop (the dropping of the non-floated mainContent area below the sidebar) if an element wider than it can contain is placed within the mainContent div. WIth a hybrid layout (percentage-based overall width with em-based sidebar), it may not be possible to calculate the exact width available. If the user's text size is larger than average, you will have a wider sidebar div and thus, less room in the mainContent div. You should be aware of this limitation - especially if the client is adding content with Contribute.
+3. In the Internet Explorer Conditional Comment below, the zoom property is used to give the mainContent "hasLayout." This may help avoid several IE-specific bugs.
+*/
+* table{
+	font-size: 11px;
+	color: #343434;
+
+}
+.red_txt {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	color: #FF0000;
+}
+.yellow_lnks {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-weight: bold;
+	color: #fed100;
+	text-decoration: underline;
+}
+
+
+
+/* Miscellaneous classes for reuse */
+.fltrt { /* this class can be used to float an element right in your page. The floated element must precede the element it should be next to on the page. */
+	float: right;
+	margin-left: 8px;
+}
+.logo  {
+	margin-top: 15px;
+	margin-left: 10px;
+	float: left;
+}
+.nav {
+	margin-top: 15px;
+	margin-left:0px;
+	margin-right: 5px;
+	clear: right;
+}
+.loginstatus {
+	width: 300px;
+	margin-top: 15px;
+	margin-left:0px;
+	margin-right: 5px;
+	float: right;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #FFFFFF;
+}
+
+.loginstatus a{
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #fed100;
+	font-weight: bold;
+}
+
+.fltlft { /* this class can be used to float an element left in your page */
+	float: left;
+	margin-right: 8px;
+}
+.clearfloat { /* this class should be placed on a div or break element and should be the final element before the close of a container that should fully contain a float */
+	clear:both;
+    height:0;
+    font-size: 1px;
+    line-height: 0px;
+}
+.header {
+	height: 110px;
+	float: left;
+	width: 770px;
+}
+
+.con_head {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	font-style: italic;
+	font-weight: bold;
+	color: #FF0000;
+}
+.white_txt {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	color: #ffffff;
+}
+#wrapContent {
+	float: left;
+	width: 770px;
+}
+.rgtad {
+width:185px;
+	clear: left;
+	padding-left: 15px;
+	padding-top: 60px;
+	overflow:hidden;
+}
+
+
+.ad_window {
+	/*position:fixed;
+	_position:absolute;
+
+
+
+ _top: expression((dummy = document.documentElement.scrollTop) + "px");
+	margin: 2px;
+	border:5px dotted #FF0000;
+	width: 500px;
+	height:50px;
+	z-index:999;
+	padding-top:inherit;
+	padding-right: 5px;
+	padding-bottom: 5px;
+	padding-left: 5px;*/
+ }
+#wrapContentadmin {
+	width: 1000px;
+	float: left;
+	margin-right: auto;
+	margin-left: auto;
+}
+.admintable{
+border: 2px solid #FF9900;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	color: #343434;
+	}
+	
+	
+	.img_thumb {
+	height: 73px;
+	width: 73px;
+	/*border: 1px dashed #999999;
+	padding: 2px;*/
+	
+	margin-top:2px;
+	margin-right:2px;
+	background-color: #F2F2F2;
+}
+
+
+	.img_preview {
+	padding: 2px;
+	background-color: #990803;
+	}
+	
+	
+	
+.city_tabs {
+	font-family:Georgia, "Times New Roman", Times, serif;
+	font-style:italic;
+	color:#333;
+	text-decoration:none;
+	font-size: 11px;
+	
+	
+}
+.spot_bigimg {
+	background-color: #CCCCCC;
+	width: 310px;
+}
+
+.city_tabs a:link{
+text-decoration:none}
+
+a.city_tabs:hover{
+color:#FF0000;}
+.img_featured {
+	padding: 2px;
+	margin: 3px;
+	width: 310px;
+}
+.top_banners {
+	float: left;
+	height: 50px;
+	width: 350px;
+	overflow: hidden;
+	padding-top: 2px;
+	padding-left: 3px;
+}
+
+/* Top Links */
+
+
+#top_links
+{
+	font-weight: normal;
+	font-size:11px;
+	font-family:Georgia, "Times New Roman", Times, serif;
+	color:#383838;
+	text-decoration:none;
+	float: right;
+	margin-right: 15px;
+	margin-top: 8px;
+	margin-bottom: 8px;
+}
+.top_links:hover
+{
+/*background-image:url(../images/underline.gif);*/
+	padding-bottom:3px;
+	background-repeat: repeat-x;
+	background-position: left bottom;
+
+
+}
+
+
+
+/* bottom advertisement fixed tab */
+
+ div#footer{
+ 	
+	position:absolute;
+	bottom:0;
+	left:0;
+	width:100%;
+	height:50px;
+	margin-top: 0;
+	margin-right: auto;
+	margin-bottom: 0;
+	margin-left: auto;
+ }
+ @media screen{
+  body>div#footer{
+  position:fixed;
+  
+    }
+ }
+ * html body{
+  overflow:hidden;
+   
+ } 
+ * html div#content{
+ position:relative;
+  height:100%;
+  overflow:auto;
+  width:1000px;
+ }
+
+ #footercontent {
+	/*background-color:#99CC00;*/
+	float: left;
+	width: 100%;
+	height: 48px;
+	margin-top: 3px;
+	
+	}
+#footer_rmargin{
+
+/*background-color:#00CC66;*/
+/*float:right;
+	width: 228px; /* top and bottom padding create visual space within this div  */
+	padding-right: 0;
+	padding-left: 0;
+			}
+
+	#fot{
+	position:absolute;
+	
+	height:50px;
+	width:995px;
+	color:#333333;
+	font-family: Geneva, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	overflow: hidden;
+	float: left;
+margin-bottom:0px;
+z-index:1000;
+	}
+#fot_lft {
+
+	float: left;
+}
+
+	#fotlinks{
+	width:370px;
+	color:#000000;
+	font-family: Geneva, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	margin-top: 10px;
+	margin-right: 5px;
+	margin-bottom: 5px;
+	margin-left: 18px;
+	font-weight: normal;
+		}
+		#fotlinks a{
+		color:#666666;}
+		#fotlinks a:hover{
+	color:#000000;
+	text-decoration: none;
+		}
+#fot_rgt {
+	float: left;
+	height: 50px;
+	overflow: hidden;
+}
+
+#fot_ad {
+	overflow: hidden;
+	float: right;
+	margin: 4px;
+}
+
+	#fot a{
+	color:#000000;
+	}
+	
+		#fot a:hover
+		{
+	color:#000000;
+	text-decoration:none;
+	}
+		
+#join {
+	margin-right: 30px;
+	float: right;
+	width: 300px;
+	margin-bottom: 10px;
+	padding-top: 30px;
+}
+*table{
+}
+.fot_mid{
+	float:right;
+	height: 50px;
+	width: 743px;
+	padding-bottom:50px;
+	background-color:#FFFFFF;
+	border-right-width: 2px;
+	border-bottom-width: 2px;
+	border-left-width: 2px;
+	border-right-style: solid;
+	border-bottom-style: none;
+	border-left-style: solid;
+	border-right-color: #FF9900;
+	border-bottom-color: #FF9900;
+	border-left-color: #FF9900;	
+	
+}
+
+
+/* ------------------------------
+	calendar--all pages
+------------------------------ */
+
+#calendar {
+	
+	
+	font-family:Verdana, Arial, Helvetica, sans-serif;
+	
+
+}
+
+#calendart {
+	width: 168px;
+	text-align: center;
+	font-size: 12px;
+	font-weight: bold;
+		text-transform: uppercase;
+/* here be some hacks */
+	margin-bottom: -4px;
+	height: 24px;
+	padding-top: 6px;
+}
+#calendar table{
+	
+}
+#calendart a { /*color: #fff;*/ }
+#calendart a:hover { /*color: #333; */}
+
+#calendar tr {
+	height: 14px;
+	
+}
+#calendar td {
+	font-weight: bold;
+	text-transform: uppercase;
+	/* here be some hacks */
+	margin-bottom: -4px;
+	text-align: center;
+	font-size: 10px;
+	border: 1px solid #999999;	/*width:50px;*/
+	
+}
+#calendar td a { color: #c10501; 
+
+ }
+#calendar td a:hover { color:#990000; }
+#today {
+	color: #666666;
+	background-image: url(/images/calendar/today.gif);
+	background-repeat: no-repeat;
+	background-position: center center;
+	
+}
+#today td{
+border: 1px solid #9e171e;
+}
+#today a {
+	color: #666666;
+		}
+	
+.cal_link {
+	color: #666666;
+		
+}
+
+a.cal_link:hover {
+	color:#3399FF;
+	}
+#calendar th {
+	color:#666666;
+	font-weight:bold;
+	font-family:Verdana, Arial, Helvetica, sans-serif;
+	font-size:11px;}
+	
+#mainDivContent{
+	border: 1px solid #CCCCCC;
+	padding-top: 0px;
+	padding-right: 5px;
+	padding-bottom: 5px;
+	padding-left: 5px;
+	width:340px;
+}#clear {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	font-weight: bold;
+}
+
+/* Select City */
+
+.chromestyle{
+	width:150px;
+	font-weight: bold;
+	float:left;
+}
+
+.chromestyle:after{ /*Add margin between menu and rest of content in Firefox*/
+content: "."; 
+display: block; 
+height: 0; 
+clear: both; 
+visibility: hidden;
+}
+
+.chromestyle ul{
+background: url(chromebg.gif) center center repeat-x; /*THEME CHANGE HERE*/
+padding: 4px 0;
+margin: 0;
+text-align: left; /*set value to "left", "center", or "right"*/
+}
+
+.chromestyle ul li{
+display: inline;
+}
+
+.chromestyle ul li a{
+	color: #494949;
+	padding: 4px;
+	text-decoration: none;
+	margin-top: 0;
+	margin-right: 0;
+	margin-bottom: 0;
+	margin-left: 0;
+}
+
+.chromestyle ul li a:hover, .chromestyle ul li a.selected{ /*script dynamically adds a class of "selected" to the current active menu item*/
+background: url(chromebg-over.gif) center center repeat-x; /*THEME CHANGE HERE*/
+}
+
+/* ######### Style for Drop Down Menu ######### */
+
+.dropmenudiv{
+position:absolute;
+top: 1px;
+z-index:100;
+width: 110px;
+visibility: hidden;
+
+/*filter: progid:DXImageTransform.Microsoft.Shadow(color=#CACACA,direction=135,strength=4);*/ /*Add Shadow in IE. Remove if desired*/
+}
+
+
+.dropmenudiv a{
+	margin-top:1px;
+	font-family:Georgia, "Times New Roman", Times, serif;
+	font-size:11px;
+	font-style:italic;
+	width: 110px;
+	display: block;
+	text-decoration: none;
+	font-weight: bold;
+	color:#fff;
+	background-image:url(images/city_bg.png);
+	background-repeat: no-repeat;
+	background-position: left top;
+	padding-top:5px;
+	height: 23px;
+	padding-right: 0;
+	padding-left: 10px;
+}
+
+* html .dropmenudiv a{ /*IE only hack*/
+padding-top:5px;
+width: 100%;
+
+}
+
+.dropmenudiv a:hover{ /*THEME CHANGE HERE*/
+background-image:url(images/city_bg_a.png);
+color:#fff;
+}
+
+#events_table{
+
+/*width:200px;*/}
+/*
+#div_right_scroll {
+	width: 310px;
+	overflow:auto;
+	overflow-y:hidden;
+	
+}
+#div_left_scroll {
+	width: 360px;
+	overflow:auto;
+	overflow-y:hidden;
+	
+}
+*/
+.blk_bg{
+padding-top:15px;
+	background-image: url(images/blk_bg.jpg);
+	background-repeat: no-repeat;
+	background-position: right top;
+}.cal_table {
+	background-image: url(images/cal_bg.jpg);
+	background-repeat: no-repeat;
+	width:311px;
+	height:109px;
+}
+.cal_th {
+	background-image: url(images/cal_th.jpg);
+	background-repeat: repeat-x;
+	height: 17px;
+	color:#FFFFFF;
+	
+}
+.cal_th td {
+	
+	border-top-style: none;
+	border-right-style: none;
+	border-bottom-style: none;
+	border-left-style: none;	
+}
+#cal_bdr{
+width:150px;
+  border: 1px solid #CC3300;
+  height:115px;
+  background-color:#FFF4F4;
+  
+	}
+.thum_caption
+{
+width:73px;
+overflow:hidden;
+height:30px;
+}
+
+.rgtad_venues {
+width:185px;
+	clear: left;
+	padding-left: 15px;
+	padding-top: 110px;
+	overflow:hidden;
+}
+.rgtad_profile {
+width:185px;
+	clear: left;
+	padding-left: 15px;
+	padding-top: 60px;
+	overflow:hidden;
+}
+.rgtad_news {
+width:185px;
+	clear: left;
+	padding-left: 15px;
+	padding-top: 19px;
+	overflow:hidden;
+}
